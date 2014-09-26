@@ -24,7 +24,7 @@ namespace Doctors.iPhone
             };
             ActorLabel = new UILabel()
             {
-                Font = UIFont.FromName("TrebuchetMS", 22f),
+                Font = UIFont.FromName("TrebuchetMS", 18f),
                 BackgroundColor = UIColor.Clear
             };
             IncarnationLabel = new UILabel()
@@ -46,7 +46,7 @@ namespace Doctors.iPhone
         {
             ActorLabel.Text = doctor.Actor;
             IncarnationLabel.Text = doctor.Incarnation;
-            StartDateLabel.Text = doctor.StartDate.ToShortDateString();
+            StartDateLabel.Text = doctor.StartDate.ToString("MMMM yyyy");
             photo.Image = UIImage.FromBundle("images/" + doctor.ImageUrl);
         }
 
@@ -57,8 +57,8 @@ namespace Doctors.iPhone
             photo.Frame = new RectangleF(0, 0, 44, 44);
 
             ActorLabel.Frame = new RectangleF(50, 0, ContentView.Bounds.Width - 50, 25);
-            IncarnationLabel.Frame = new RectangleF(50, 20, 80, 25);
-            StartDateLabel.Frame = new RectangleF(ContentView.Bounds.Width - 84, 20, 80, 25);
+            IncarnationLabel.Frame = new RectangleF(50, 20, 90, 25);
+            StartDateLabel.Frame = new RectangleF(ContentView.Bounds.Width - 114, 20, 110, 25);
         }
 
     }

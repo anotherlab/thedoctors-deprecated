@@ -11,10 +11,39 @@ namespace Doctors.iPhone
     public partial class DetailViewController : UIViewController
     {
         DoctorActor detailItem;
+        private UILabel ActorLabel, Actor, IncarnationLabel, Incarnation, StartDateLabel, StartDate, AgeLabel, Age;
 
         public DetailViewController(IntPtr handle)
             : base(handle)
         {
+            float dy = 20f;
+            float dyy = 24f;
+            float y = 260f;
+
+            var labelsize = 12f;
+            var textside = 18f;
+
+            Title = "DetailsTitle".t();
+
+
+            ActorLabel = MakeLabel("Actor".t(), y, labelsize);
+            y += dy;
+            Actor = MakeLabel("Actor".t(), y, textside);
+
+            y += dyy;
+            IncarnationLabel = MakeLabel("Incarnation".t(), y, labelsize);
+            y += dy;
+            Incarnation = MakeLabel("Actor".t(), y, textside);
+
+            y += dyy;
+            StartDateLabel = MakeLabel("StartDate".t(), y, labelsize);
+            y += dy;
+            StartDate = MakeLabel("Actor".t(), y, textside);
+
+            y += dyy;
+            AgeLabel = MakeLabel("AgeAtStart".t(), y, labelsize);
+            y += dy;
+            Age = MakeLabel("Actor".t(), y, textside);
         }
 
         public void SetDetailItem(DoctorActor newDetailItem)
@@ -28,6 +57,20 @@ namespace Doctors.iPhone
             }
         }
 
+        private UILabel MakeLabel(string Caption, float y, float size)
+        {
+            var label = new UILabel()
+            {
+                Text = Caption,
+                Font = UIFont.FromName("TrebuchetMS", size),
+                Frame = new RectangleF(10, y, 250, 25)
+            };
+
+            View.Add(label);
+
+            return label;
+        }
+
         void ConfigureView()
         {
             // Update the user interface for the detail item
@@ -35,17 +78,10 @@ namespace Doctors.iPhone
             {
 				photo.Image = UIImage.FromBundle("images/" + detailItem.ImageUrl);
 
-				//ActorLabel.Text = "Actor".t();
-                this.Actor.Text = detailItem.Actor;
-
-				//IncarnationLabel.Text = "Incarnation".t();
+                Actor.Text = detailItem.Actor;
                 Incarnation.Text = detailItem.Incarnation;
-
-				StartDateLabel.Text = "Start Date".t();
-				this.StartDate.Text = detailItem.StartDate.ToShortDateString ();
-
-				this.Age.Text = detailItem.Age.ToString ();
-				AgeLabel.Text = "Starting Age".t ();
+				StartDate.Text = detailItem.StartDate.ToShortDateString ();
+				Age.Text = detailItem.Age.ToString ();
             }
         }
 

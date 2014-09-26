@@ -64,7 +64,7 @@ namespace Doctors.Android
 
             holder.Name.Text = doctors[position].Actor;
             holder.Incarnation.Text = doctors[position].Incarnation;
-            holder.StartingDate.Text = doctors[position].StartDate.ToShortDateString();
+            holder.StartingDate.Text = doctors[position].StartDate.ToString("MMMM yyyy");
 
             return view;
         }

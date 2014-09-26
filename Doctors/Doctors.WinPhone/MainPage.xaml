@@ -54,7 +54,7 @@
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="{Binding Actor}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                             <TextBlock Text="{Binding Incarnation}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Grid.Row="1" Grid.Column="0"/>
-                            <TextBlock Text="{Binding Path=StartDate, StringFormat='{}{0:d}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Path=StartDate, StringFormat='{}{0:MMMM yyyy}'}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right"/>
                         </Grid>
                     </Grid>
                 </DataTemplate>

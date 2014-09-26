@@ -16,69 +16,13 @@ namespace Doctors.iPhone
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel Actor { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel Age { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel AgeLabel { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel Incarnation { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel IncarnationLabel { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UIImageView photo { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel StartDate { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel StartDateLabel { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (Actor != null) {
-				Actor.Dispose ();
-				Actor = null;
-			}
-			if (Age != null) {
-				Age.Dispose ();
-				Age = null;
-			}
-			if (AgeLabel != null) {
-				AgeLabel.Dispose ();
-				AgeLabel = null;
-			}
-			if (Incarnation != null) {
-				Incarnation.Dispose ();
-				Incarnation = null;
-			}
-			if (IncarnationLabel != null) {
-				IncarnationLabel.Dispose ();
-				IncarnationLabel = null;
-			}
 			if (photo != null) {
 				photo.Dispose ();
 				photo = null;
-			}
-			if (StartDate != null) {
-				StartDate.Dispose ();
-				StartDate = null;
-			}
-			if (StartDateLabel != null) {
-				StartDateLabel.Dispose ();
-				StartDateLabel = null;
 			}
 		}
 	}

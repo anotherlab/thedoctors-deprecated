@@ -17,19 +17,12 @@ namespace Doctors.iPhone
         public MasterViewController(IntPtr handle)
             : base(handle)
         {
-            Title = NSBundle.MainBundle.LocalizedString("Master", "Master");
+            //Title = NSBundle.MainBundle.LocalizedString("Master", "Master");
 
-            // Custom initialization
+            Title = "ApplicationTitle".t();
         }
 
 
-        //void AddNewItem(object sender, EventArgs args)
-        //{
-        //    dataSource.Objects.Insert(0, DateTime.Now);
-
-        //    using (var indexPath = NSIndexPath.FromRowSection(0, 0))
-        //        TableView.InsertRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Automatic);
-        //}
 
         public override void DidReceiveMemoryWarning()
         {
@@ -43,13 +36,6 @@ namespace Doctors.iPhone
         {
             base.ViewDidLoad();
 
-            // Perform any additional setup after loading the view, typically from a nib.
-            //NavigationItem.LeftBarButtonItem = EditButtonItem;
-
-            //var addButton = new UIBarButtonItem(UIBarButtonSystemItem.Add, AddNewItem);
-            //NavigationItem.RightBarButtonItem = addButton;
-
-
 			doctors = DoctorFactory.Doctors;
 
             TableView.Source = dataSource = new DataSource(doctors, this);
@@ -58,7 +44,6 @@ namespace Doctors.iPhone
         class DataSource : UITableViewSource
         {
 			static readonly NSString CellIdentifier = new NSString("DoctorCell");
-            //static readonly NSString CellIdentifier = new NSString("Cell");
             readonly List<DoctorActor> objects = new List<DoctorActor>();
             readonly MasterViewController controller;
 
@@ -82,15 +67,6 @@ namespace Doctors.iPhone
             {
                 return objects.Count;
             }
-            // Customize the appearance of table view cells.
-//            public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
-//            {
-//                var cell = (UITableViewCell)tableView.DequeueReusableCell(CellIdentifier, indexPath);
-//
-//                cell.TextLabel.Text = objects[indexPath.Row].Actor;
-//
-//                return cell;
-//            }
 
 			public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
 			{
@@ -105,23 +81,6 @@ namespace Doctors.iPhone
 
 				return cell;
 			}
-            //public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
-            //{
-            //    var cell = tableView.DequeueReusableCell(CellIdentifier);
-
-            //    if (cell == null)
-            //    {
-            //        cell = new UITableViewCell(UITableViewCellStyle.Subtitle, CellIdentifier);
-            //    }
-            //    var speaker = objects[indexPath.Row];
-
-            //    cell.TextLabel.Text = speaker.Actor;
-            //    cell.DetailTextLabel.Text = speaker.Incarnation;
-
-            //    cell.ImageView.Image = UIImage.FromBundle("images/" + speaker.ImageUrl);
-
-            //    return cell;
-            //}
 
 			public override void RowSelected (UITableView tableView, NSIndexPath indexPath)
 			{

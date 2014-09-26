@@ -75,62 +75,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Actor's name goes here" textAlignment="left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7" fixedFrame="YES">
-                                <rect key="frame" x="20" y="267" width="280" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Incarnation" lineBreakMode="tailTruncation" minimumFontSize="10" id="34" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="304" width="266" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Actor's name goes here" textAlignment="left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="35" fixedFrame="YES">
-                                <rect key="frame" x="20" y="333" width="280" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Actor" lineBreakMode="tailTruncation" minimumFontSize="10" id="46" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="left" fixedFrame="YES">
-                                <rect key="frame" x="20" y="365" width="266" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Actor's name goes here" textAlignment="left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="47" fixedFrame="YES">
-                                <rect key="frame" x="20" y="394" width="280" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Actor" lineBreakMode="tailTruncation" minimumFontSize="10" id="48" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="left" fixedFrame="YES">
-                                <rect key="frame" x="20" y="438" width="266" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Actor's name goes here" textAlignment="left" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="49" fixedFrame="YES">
-                                <rect key="frame" x="20" y="467" width="280" height="17"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Actor" lineBreakMode="tailTruncation" minimumFontSize="10" id="27" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="left" fixedFrame="YES">
-                                <rect key="frame" x="20" y="238" width="266" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="90" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="0.0" y="64" width="320" height="166"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,13 +84,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
-                        <outlet property="Actor" destination="7" id="name-outlet-7"/>
-                        <outlet property="IncarnationLabel" destination="34" id="name-outlet-34"/>
-                        <outlet property="Incarnation" destination="35" id="name-outlet-35"/>
-                        <outlet property="StartDateLabel" destination="46" id="name-outlet-46"/>
-                        <outlet property="StartDate" destination="47" id="name-outlet-47"/>
-                        <outlet property="AgeLabel" destination="48" id="name-outlet-48"/>
-                        <outlet property="Age" destination="49" id="name-outlet-49"/>
                         <outlet property="photo" destination="90" id="name-outlet-90"/>
                     </connections>
                 </viewController>
@@ -175,5 +112,18 @@
         <image name="images/SylvesterMcCoy.png" width="255" height="254"/>
         <image name="images/TomBaker.png" width="254" height="251"/>
         <image name="images/WilliamHartnell.png" width="256" height="255"/>
+        <image name="images\WilliamHartnell.png" width="256" height="255"/>
+        <image name="images\TomBaker.png" width="254" height="251"/>
+        <image name="images\SylvesterMcCoy.png" width="255" height="254"/>
+        <image name="images\PeterDavison.png" width="254" height="255"/>
+        <image name="images\PeterCapaldi.png" width="247" height="255"/>
+        <image name="images\PaulMcGann.png" width="254" height="254"/>
+        <image name="images\PatrickTroughton.png" width="253" height="252"/>
+        <image name="images\MattSmith.png" width="255" height="255"/>
+        <image name="images\JonPertwee.png" width="256" height="256"/>
+        <image name="images\JohnHurt.png" width="256" height="256"/>
+        <image name="images\DavidTennant.png" width="255" height="255"/>
+        <image name="images\ColinBaker.png" width="252" height="273"/>
+        <image name="images\ChristopherEccleston.png" width="256" height="251"/>
     </resources>
 </document>
