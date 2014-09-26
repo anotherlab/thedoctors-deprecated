@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationTitle">The Doctors</string>
+  <string name="DetailsTitle">The Doctor</string>
+  <string name="Actor">Actor</string>
+  <string name="Incarnation">Incarnation</string>
+  <string name="StartDate">Starting Date</string>
+  <string name="AgeAtStart">Age at start</string>
+  <string name="Seasons">Seasons</string>
+</resources>

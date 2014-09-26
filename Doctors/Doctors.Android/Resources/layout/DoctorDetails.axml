@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/nameTextViewlLabel"
+        android:text="@string/Actor"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp" />
+    <TextView
+        android:id="@+id/nameTextView"
+        android:text="--name--"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+    <TextView
+        android:id="@+id/incarnationTextViewLabel"
+        android:text="@string/Incarnation"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp" />
+    <TextView
+        android:id="@+id/incarnationTextView"
+        android:text="--incarnation--"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+    <TextView
+        android:id="@+id/startingDateTextViewLabel"
+        android:text="@string/StartDate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp" />
+    <TextView
+        android:id="@+id/startingDateTextView"
+        android:text="-01/02/3456-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+    <TextView
+        android:id="@+id/ageTextViewLabel"
+        android:text="@string/AgeAtStart"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp" />
+    <TextView
+        android:id="@+id/ageTextView"
+        android:text="-40-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+</LinearLayout>
