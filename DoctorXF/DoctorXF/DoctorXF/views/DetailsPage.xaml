@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DoctorXF;assembly=DoctorXF"
+             xmlns:l10n="clr-namespace:DoctorXF.Resources;assembly=DoctorXF"
+             x:Class="DoctorXF.views.DetailsPage"
+             Title="{l10n:Translate DetailsTitle}">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:ImageResourceConverter x:Key="imageResourceCvt" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ScrollView>
+    <StackLayout Spacing="10">
+      <StackLayout.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="5,20,5,5" Android="5,0,5,5" WinPhone="5,0,5,5" />
+      </StackLayout.Padding>
+
+      <Image HeightRequest="256" Aspect="AspectFit"
+                   Source="{Binding ImageUrl, Converter={StaticResource imageResourceCvt}}" />
+
+      <Label Text="{l10n:Translate Actor}" Font="12" TextColor="Accent"/>
+      <Label Text="{Binding Actor}" Font="Bold,24"/>
+      <Label Text="{l10n:Translate Incarnation}" Font="12" TextColor="Accent"/>
+      <Label Text="{Binding Incarnation}" Font="Bold,24"/>
+      <Label Text="{l10n:Translate StartDate}" Font="12" TextColor="Accent"/>
+      <Label Text="{Binding Path=StartDate, StringFormat='{}{0:d}'}" Font="Bold,24"/>
+      <Label Text="{l10n:Translate AgeAtStart}" Font="12" TextColor="Accent"/>
+      <Label Text="{Binding Age}" Font="Bold,24"/>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
